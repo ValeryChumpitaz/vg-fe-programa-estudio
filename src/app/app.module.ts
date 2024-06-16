@@ -7,17 +7,19 @@ import { AppComponent } from './app.component';
 import { StudyListComponent } from './study-programme/study-list/study-list.component'; // Ajusta la ruta según la ubicación real de tu componente
 import { HeaderComponent } from './shared/components/header/header.component';
 import { StudyProgrammeComponent } from './study-programme/study-programme/study-programme.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StudyListComponent, // Asegúrate de agregar StudyListComponent aquí
-    HeaderComponent, StudyProgrammeComponent,
+    HeaderComponent, StudyProgrammeComponent, HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

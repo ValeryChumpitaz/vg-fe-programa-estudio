@@ -1,0 +1,580 @@
+.director-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 40px; /* Incrementado para mayor separación */
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo gris claro para resaltar */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.director-profile img {
+  width: 150px; /* Tamaño de la imagen */
+  height: 150px; /* Altura de la imagen */
+  border-radius: 50%; /* Hacer la imagen redonda */
+  object-fit: cover; /* Ajustar la imagen dentro del contenedor redondo */
+  border: 4px solid #fff; /* Borde blanco alrededor de la imagen */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.director-info {
+  margin-left: 30px; /* Espacio entre la imagen y la información */
+}
+
+.director-info h3 {
+  margin-bottom: 10px; /* Separación inferior para el título */
+  color: #333; /* Color del texto */
+}
+
+.director-info p {
+  font-size: 16px; /* Tamaño del texto */
+  line-height: 1.6; /* Espaciado entre líneas */
+  color: #666; /* Color del texto */
+}
+/* Estilos para la sección de Nosotros */
+#nosotros {
+  background-color: #FFF8DC;
+  padding: 80px 0;
+  margin-top: 20px;
+}
+
+#nosotros .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nosotros .content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#nosotros h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #8B4513;
+}
+
+#nosotros p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+#nosotros .image img {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+}
+
+/* Estilos para la sección de Misión y Visión */
+#mision-vision {
+  background-color: #FFF8DC;
+  padding: 80px 0;
+}
+
+#mision-vision .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mision-vision .content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#mision-vision h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #8B4513;
+}
+
+#mision-vision p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+#mision-vision .image img {
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+}
+
+/* Estilos para la sección de Nuestra Galería */
+#galeria {
+  background-color: #D2B48C;
+  padding: 80px 0;
+}
+
+#galeria .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#galeria h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #8B4513;
+}
+
+#galeria p {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery-item {
+  flex: 1 0 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Estilos para la sección de Testimonios */
+#testimonios {
+  background-color: #FFF8DC;
+  padding: 80px 0;
+}
+
+#testimonios h2 {
+  color: #8B4513;
+}
+
+.testimonio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.testimonio-icono {
+  margin-right: 20px;
+}
+
+.testimonio-icono img {
+  width: 50px;
+  height: auto;
+}
+
+.testimonio-contenido {
+  flex: 1;
+}
+
+.cita-destacada {
+  font-style: italic;
+  font-size: 24px;
+  color: #333;
+  border-left: 4px solid #D2B48C;
+  padding-left: 20px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.nombre-estudiante {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.calificacion img {
+  width: 100px;
+  height: auto;
+}
+
+.testimonio-imagen {
+  margin-right: 20px;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.testimonio-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para la sección de Contacto */
+#contacto {
+  background-color: #D2B48C;
+  padding: 80px 0;
+}
+
+#contacto h1 {
+  color: #ffffff;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-container .form-control {
+  margin-bottom: 15px;
+}
+
+.btn-principal {
+  margin-right: 10px;
+  color: #ffffff;
+  background-color: #8B4513;
+  border-color: #FFD700;
+}
+
+.btn-principal:hover {
+  background-color: #FFD700;
+  color: #8B4513;
+}
+
+.text-danger {
+  color: #8B4513;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  background-color: #8B4513;
+  color: #ecf0f1;
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #FFD700;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #FFD700;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #FFD700;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Estilos específicos para la sección de Directora */
+#directora {
+  background-color: #d2b48c;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#directora h2 {
+  color: #8b5a2b;
+  font-size: 36px;
+  margin-bottom: 20px;
+  flex: 1;
+  max-width: calc(50% - 40px);
+}
+
+.director-profile {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.director-profile img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.director-info {
+  flex: 11;
+  max-width: calc(50% - 80px);
+}
+
+.director-info h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.director-info p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilos para la sección de Proveedores */
+#proveedores {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+#proveedores h2 {
+  color: #8b5a2b;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Estilos generales para formularios de validación */
+.is-valid {
+  border-color: #28a745;
+  border-width: 4px;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+  border-width: 4px;
+}
+
+input.ng-valid,
+select.ng-valid,
+textarea.ng-valid {
+  border-color: #28a745;
+  background-color: #c0ebca;
+  border-width: 4px;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: #dc3545;
+  background-color: #ecc4c7;
+  border-width: 4px;
+}
+/* Estilos adicionales para elementos específicos */
+
+/* Ejemplo de estilo para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s; /* Transición suave del color al pasar el mouse */
+}
+
+a:hover {
+  color: #0056b3; /* Color azul más oscuro al pasar el mouse */
+}
+
+/* Ejemplo de estilo para botones */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #007bff; /* Borde inicial azul */
+  color: #007bff;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.btn:hover {
+  background-color: #007bff; /* Fondo azul al pasar el mouse */
+  color: #fff; /* Texto blanco al pasar el mouse */
+}
+
+/* Ejemplo de estilo para etiquetas */
+.label {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Fondo azul */
+  border-radius: 5px;
+}
+
+/* Ejemplo de estilo para mensajes de alerta */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+
+.alert-primary hr {
+  border-top-color: #9fcdff;
+}
+
+.alert-primary .alert-link {
+  color: #002752;
+}
+
+/* Ejemplo de estilo para tarjetas */
+.card {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Ejemplo de estilo para iconos */
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: #007bff; /* Color azul */
+  border: 1px solid #007bff; /* Borde azul */
+  border-radius: 50%; /* Forma circular */
+}
+
+/* Ejemplo de estilo para citas */
+.quote {
+  font-style: italic;
+  font-size: 18px;
+  color: #007bff; /* Color azul para la cita */
+  margin-top: 10px;
+}
+
+/* Ejemplo de estilo para listas */
+.list-group-item {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #007bff; /* Borde azul */
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.list-group-item:hover {
+  background-color: #f0f8ff; /* Fondo azul claro al pasar el mouse */
+}
+
+/* Ejemplo de estilo para botones de acción */
+.action-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff; /* Fondo azul */
+  border: 2px solid #007bff; /* Borde azul */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transiciones suaves */
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
+  border-color: #0056b3; /* Borde azul más oscuro al pasar el mouse */
+}
