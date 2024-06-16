@@ -1,0 +1,31 @@
+<!-- Enlaces a estilos CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Script de Swiper para funcionalidad de carrusel -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Encabezado de la página -->
+<header class="header-container">
+    <!-- Logo de la empresa -->
+    <div class="logo">
+        <img src="assets/imgs/colegio_logo.png" alt="Logo de la empresa">
+        <span class="company-name">Cetpro Artemio Dolorier</span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#mision-vision">Misión y Visión</a></li>
+            <li><a href="#galeria">Nuestra Galería</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#contacto">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Botón de inicio de sesión con routerLink de Angular -->
+    <a [routerLink]="['/admin']" class="btn-login">Login</a>
+</header>

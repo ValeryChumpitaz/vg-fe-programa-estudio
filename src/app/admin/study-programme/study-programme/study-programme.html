@@ -1,0 +1,63 @@
+<div class="fixed z-10 inset-0 overflow-y-auto" *ngIf="showModal">
+  <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+    <div class="fixed inset-0 transition-opacity" aria-hidden="true">
+      <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+    </div>
+    <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+    <div
+      class="inline-block align-bottom bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+      <div>
+        <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+          {{ selectedCelebrantForEdit ? 'Editar Celebrante' : 'Agregar Celebrante' }}
+        </h3>
+        <div class="mt-2">
+          <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+            <input type="hidden" [(ngModel)]="celebrant.idCelebrant" name="idCelebrant">
+
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="firstName">Nombres Completos</label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="firstName" type="text" [(ngModel)]="celebrant.firstName" name="firstName" required>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="lastName">Apellidos Completos</label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="lastName" type="text" [(ngModel)]="celebrant.lastName" name="lastName" required>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="dateOfBirth">Fecha de Nacimiento</label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="dateOfBirth" type="date" [(ngModel)]="celebrant.dateOfBirth" name="dateOfBirth" required>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="documentType">Tipo Documento</label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="documentType" type="text" [(ngModel)]="celebrant.documentType" name="documentType" required>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="documentNumber">Numero De Documento</label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="documentNumber" type="text" [(ngModel)]="celebrant.documentNumber" name="documentNumber" required>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Correo</label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email" type="email" [(ngModel)]="celebrant.email" name="email" required>
+            </div>
+            <div class="flex items-center justify-end mt-4">
+              <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mr-2" type="button"
+                (click)="closeModal()">Cancel</button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
